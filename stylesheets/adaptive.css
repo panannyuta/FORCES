@@ -7,7 +7,7 @@ html, body {
   }
   
   /* Медиазапросы для мобильных устройств с шириной до 430px */
-  @media (max-width: 1170px) {
+  @media (max-width: 430px) {
     .head {
         height: 7vw;
         background-color: #FF0000;
@@ -19,7 +19,7 @@ html, body {
     }
 
     .zigzag {
-        height: 2vh;
+        height: 3vh;
         width: auto;
         position: absolute;
         top: 50%;
@@ -39,27 +39,21 @@ html, body {
         animation: moveTopBottom 3s ease-in-out infinite;
     }
 
-
     .zvezdamove, .banka {
-      height: 70vw;
+      height: 90vw;
       width: 100%;
     }
-  
+
     .zvezdaimg {
-      max-width: 80%;
+        position: absolute;
+        top: 8vw;
     }
-  
-    /* Анимации для маленьких экранов */
+
     .bankaimg {
-      width: 100%;
+        width: 60vw;
+        height: 60vw;
     }
-  
-    .bankaimg {
-      width: 60vw;
-      animation: none;
-    }
-  
-    /* Картинки и анимации банки */
+
     .bankamove {
       width: 100%;
       height: 100%;
@@ -69,9 +63,13 @@ html, body {
     .fon {
       max-width: 300%;
     }
+
+    .kassa {
+      height: 23vw;
+    }
   
     .cans {
-      width: 100vw;
+      width: 200vw;
     }
   
     /* Секция с WOW и BABL */
@@ -85,41 +83,40 @@ html, body {
     }
   
     .babl {
-      top: 40%;
-      left: 30%;
-      width: 40vw;
+      top: 50%;
+      left: 35%;
+      width: 30vw;
     }
   
     .wowmove {
       left: 0;
-      top: 50%;
+      top: 80%;
       width: 40%;
     }
   
     .babl2 {
-      top: 20%;
-      left: 60%;
-      width: 40vw;
+      top: 75%;
+      left: 70%;
+      width: 30vw;
     }
   
     .boo {
-      top: 10%;
-      left: 30%;
+      top: 20%;
+      left: 65%;
       width: 50%;
     }
   
     .ops {
-      top: 30%;
-      left: 10%;
-      max-width: 50%;
-      width: 80%;
+      top: 20%;
+      left: 5%;
+      width: 30vw;
     }
   
     .krug, .krug2, .krug3 {
-      width: 10vw;
-      height: auto;
+      display: none;
     }
-  
+
+
     /* Мобильные стили для секции с бутылкой */
     .section {
       height: 200vh;
