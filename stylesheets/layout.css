@@ -452,8 +452,11 @@ html, body {
 
 .tribloka {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
 }
+
+
 
 .butilka {
     background-color: #FFCC00;

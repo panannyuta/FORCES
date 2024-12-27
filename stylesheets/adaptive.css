@@ -8,8 +8,9 @@ html, body {
   
   /* Медиазапросы для мобильных устройств с шириной до 430px */
   @media (max-width: 430px) {
+
     .head {
-        height: 7vw;
+        height: 11vw;
         background-color: #FF0000;
         position: relative;
         width: 100%;
@@ -19,7 +20,7 @@ html, body {
     }
 
     .zigzag {
-        height: 3vh;
+        height: 4vh;
         width: auto;
         position: absolute;
         top: 50%;
@@ -116,87 +117,146 @@ html, body {
       display: none;
     }
 
-
-    /* Мобильные стили для секции с бутылкой */
-    .section {
-      height: 200vh;
-    }
-  
-    .tribloka {
-      display: block;
-    }
-  
-    .butilka {
-      width: 80vw;
-      height: auto;
-      margin: 0 auto;
-    }
-  
-    .movebutilka, .movebutilka2, .movebutilka3, .movebutilka4, .movebutilka5 {
-      width: 80vw;
-      height: auto;
-    }
-  
-    .c, .i, .l, .a {
-      width: 60vw;
-      position: relative;
-      top: 60%;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  
-    .right-column {
-      width: 100%;
-      display: block;
-    }
-  
-    .krushki {
-      height: auto;
-      width: 100%;
-    }
-  
-    .zvezda2 {
-      height: auto;
-      width: 100%;
-    }
-  
-    .krushka1, .boom1, .boom11, .boom2, .boom3, .boom4, .boom5, .boom6, .boom7, .boom77, .boom8, .boom9, .boom99 {
-      width: 50%;
-      height: auto;
-    }
-  
-    .boom1 {
-      animation: boom 3s infinite ease-in-out;
-    }
-  
-    .boom2 {
-      animation: boom2 2.5s infinite ease-in-out;
-    }
-  
-    .boom3 {
-      animation: boom3 3s infinite ease-in-out;
-    }
-  
-    /* Подвал */
-    .podval {
-      text-align: center;
-      margin-top: 2vw;
-    }
-  
-    .text {
-      font-size: 12px;
-      color: #000;
-    }
-  
     /* Мобильные стили для бегущего зигзага */
     .marquee-container {
-      height: 4vw;
+        height: 11vw;
     }
-  
-    .marquee {
-      animation: scroll 5s linear infinite;
+
+    .zigzag2 {
+        height: 11vw;
     }
-  
+
+    /* три блока */
+
+    .tribloka {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        flex-wrap: nowrap; /* Отключаем перенос */
+    }
+
+    .butilka, .podval {
+        margin: 0;
+        padding: 0;
+    }
+    
+
+    .butilka {
+        width: 100%; /* Блок .butilka занимает 30% от ширины контейнера */
+    }
+
+    .right-column {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .krushki {
+        width: 100%; /* Блок krushki занимает всю ширину правой колонки */
+    }
+
+    .zvezda2 {
+        width: 100%; /* Блок zvezda2 тоже растягивается на всю ширину правой колонки */
+    }
+
+    .tribloka {
+        flex-direction: column; /* На мобильных устройствах блоки располагаются вертикально */
+    }
+
+    .right-column {
+        width: 100%; /* В мобильной версии правая колонка будет занимать всю ширину */
+    }
+
+    /* крыщка */
+
+    .krushka1 {
+        height: 20vh;
+        width: auto;
+        position: absolute;
+        left: 7vw;
+        top: 12vw;
+    }
+
+    .boom3, .boom6, .boom9, .boom99 {
+        display: none;
+    }
+    
+    .boom1, .boom11, .boom2, .boom4, .boom5, .boom55, .boom7, .boom8, .boom77 {
+        height: 12vh;
+        width: auto;
+    }
+
+    .boom1, .boom11 {
+        position: absolute;
+        left: 52vw;
+        top: 1vh;
+    }
+
+    .boom2 {
+        position: absolute;
+        left: 75vw;
+        top: 1vh;
+    }
+
+    .boom4 {
+        position: absolute;
+        left: 52vw;
+        top: 11vh;
+    }
+
+    .boom5, .boom55 {
+        position: absolute;
+        left: 75vw;
+        top: 11vh;
+    }
+
+    .boom7, .boom77 {
+        position: absolute;
+        left: 52vw;
+        top: 21vh;
+    }
+
+    .boom8 {
+        position: absolute;
+        left: 75vw;
+        top: 21vh;
+    }
+
+    /* большая звезда */
+
+    .bigzvezda {
+        height: 42vh;
+        width: auto;
+    }
+
+    /*  */
+
+    .movebutilka, .movebutilka2, .movebutilka3, .movebutilka4, .movebutilka5 {
+        position: absolute;
+        width: 40%;
+        height: auto;
+        bottom: -10vh;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* Подвал */
+    .podval {
+        height: 11vw;
+        /* width: 100%; */
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    .text {
+      font-size: 12px;
+    }
+
     /* Анимации */
     @keyframes moveLeftRight {
       0% {
