@@ -1,0 +1,225 @@
+/* Общие стили */
+html, body {
+    font-family: "Groboldov";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Медиазапросы для мобильных устройств с шириной до 430px */
+  @media (max-width: 430px) {
+    .head {
+        height: 7vw;
+        background-color: #FF0000;
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .zigzag {
+        height: 2vh;
+        width: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* Секция с "двумя блоками" */
+    .dvabloka {
+      display: block;
+      text-align: center;
+    }
+
+    .luchi {
+        max-width: 200%;
+        height: auto;
+        animation: moveTopBottom 3s ease-in-out infinite;
+    }
+
+
+    .zvezdamove, .banka {
+      height: 70vw;
+      width: 100%;
+    }
+  
+    .zvezdaimg {
+      max-width: 80%;
+    }
+  
+    /* Анимации для маленьких экранов */
+    .bankaimg {
+      width: 100%;
+    }
+  
+    .bankaimg {
+      width: 60vw;
+      animation: none;
+    }
+  
+    /* Картинки и анимации банки */
+    .bankamove {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+  
+    .fon {
+      max-width: 300%;
+    }
+  
+    .cans {
+      width: 100vw;
+    }
+  
+    /* Секция с WOW и BABL */
+    .wow {
+      height: 60vw;
+    }
+  
+    .fon2 {
+      max-width: 400%;
+      max-height: 400%;
+    }
+  
+    .babl {
+      top: 40%;
+      left: 30%;
+      width: 40vw;
+    }
+  
+    .wowmove {
+      left: 0;
+      top: 50%;
+      width: 40%;
+    }
+  
+    .babl2 {
+      top: 20%;
+      left: 60%;
+      width: 40vw;
+    }
+  
+    .boo {
+      top: 10%;
+      left: 30%;
+      width: 50%;
+    }
+  
+    .ops {
+      top: 30%;
+      left: 10%;
+      max-width: 50%;
+      width: 80%;
+    }
+  
+    .krug, .krug2, .krug3 {
+      width: 10vw;
+      height: auto;
+    }
+  
+    /* Мобильные стили для секции с бутылкой */
+    .section {
+      height: 200vh;
+    }
+  
+    .tribloka {
+      display: block;
+    }
+  
+    .butilka {
+      width: 80vw;
+      height: auto;
+      margin: 0 auto;
+    }
+  
+    .movebutilka, .movebutilka2, .movebutilka3, .movebutilka4, .movebutilka5 {
+      width: 80vw;
+      height: auto;
+    }
+  
+    .c, .i, .l, .a {
+      width: 60vw;
+      position: relative;
+      top: 60%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  
+    .right-column {
+      width: 100%;
+      display: block;
+    }
+  
+    .krushki {
+      height: auto;
+      width: 100%;
+    }
+  
+    .zvezda2 {
+      height: auto;
+      width: 100%;
+    }
+  
+    .krushka1, .boom1, .boom11, .boom2, .boom3, .boom4, .boom5, .boom6, .boom7, .boom77, .boom8, .boom9, .boom99 {
+      width: 50%;
+      height: auto;
+    }
+  
+    .boom1 {
+      animation: boom 3s infinite ease-in-out;
+    }
+  
+    .boom2 {
+      animation: boom2 2.5s infinite ease-in-out;
+    }
+  
+    .boom3 {
+      animation: boom3 3s infinite ease-in-out;
+    }
+  
+    /* Подвал */
+    .podval {
+      text-align: center;
+      margin-top: 2vw;
+    }
+  
+    .text {
+      font-size: 12px;
+      color: #000;
+    }
+  
+    /* Мобильные стили для бегущего зигзага */
+    .marquee-container {
+      height: 4vw;
+    }
+  
+    .marquee {
+      animation: scroll 5s linear infinite;
+    }
+  
+    /* Анимации */
+    @keyframes moveLeftRight {
+      0% {
+        transform: translateX(10vw);
+      }
+      50% {
+        transform: translateX(-10vw);
+      }
+      100% {
+        transform: translateX(10vw);
+      }
+    }
+  
+    @keyframes scroll {
+      0% {
+        transform: translateX(-200%);
+      }
+      100% {
+        transform: translateX(-350%);
+      }
+    }
+  }
+  
