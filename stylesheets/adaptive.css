@@ -7,7 +7,7 @@ html, body {
   }
   
   /* Медиазапросы для мобильных устройств с шириной до 430px */
-  @media (max-width: 500px) {
+  @media (max-width: 1170px) {
     .head {
         height: 7vw;
         background-color: #FF0000;
