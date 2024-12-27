@@ -1,0 +1,1038 @@
+html, body {
+  font-family: "Groboldov";
+}
+
+/* верхняя строка "сильнее с каждым глотком" */
+
+.head {
+    background-color: #FF0000;
+    height: 5vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.headmove {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    animation: moveLeftRight 2s infinite alternate ease-in-out;
+    animation-play-state: running;
+}
+
+.headmove:hover {
+    animation-play-state: paused;
+}
+
+@keyframes moveLeftRight {
+    0% {
+        transform: translateX(15vw);
+    }
+    50% {
+        transform: translateX(-10vw);
+    }
+    100% {
+        transform: translateX(15vw);
+    }
+}
+
+.head_text {
+    font-size: 36px;
+    color: #FFCC00;
+    letter-spacing: 2px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 33.8vw;
+}
+
+.zigzag {
+    position: absolute;
+    left: -16vw;
+}
+
+.zigzag2 {
+    position: absolute;
+    left: 62vw;
+}
+
+/* блок с крутящейся звездой */
+
+.dvabloka {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.zvezdamove {
+    background-color: #FF0000;
+    height: 39vw;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.luchi {
+    transform: scale(2);
+    max-width: 200%;
+    height: auto;
+    animation: moveTopBottom 3s ease-in-out infinite;
+}
+
+@keyframes moveTopBottom {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(8vw);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.zvezdaimg {
+    position: absolute;
+    top: 2vw;
+    z-index: 1;
+    max-width: 70%;
+    height: auto;
+    animation: rotateZvezda 5s linear infinite;
+    animation-play-state: running;
+}
+
+.zvezdaimg:hover {
+    animation-play-state: paused;
+}
+
+@keyframes rotateZvezda {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.banka {
+    background-color: #001EFF;
+    height: 39vw;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.bankamove {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.fon {
+    max-width: 200%;
+    max-height: 200%; 
+    object-fit: contain;
+    transform-origin: center;
+    animation: rotateFon 20s linear infinite;
+    position: absolute;
+    z-index: 1;
+}
+
+@keyframes rotateFon {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.bankaimg {
+    width: 28vw;
+    height: 28vw;
+    object-fit: contain;
+    position: absolute;
+    z-index: 2;
+    animation: moveBanka 3s ease-in-out infinite;
+    animation-play-state: running;
+}
+
+.bankaimg:hover {
+    animation-play-state: paused;
+}
+
+@keyframes moveBanka {
+    0% {
+        top: -2%;
+        left: 0%;
+        animation-timing-function: ease-in;
+    }
+    12.5% {
+        top: -2%;
+        left: 45%;
+        animation-timing-function: ease-out;
+    }
+    25% {
+        top: 30%;
+        left: 25%;
+        animation-timing-function: ease-in;
+    }
+    37.5% {
+        top: 30%;
+        left: 0%;
+        animation-timing-function: ease-out;
+    }
+    50% {
+        top: -2%;
+        left: 30%;
+        animation-timing-function: ease-in;
+    }
+    62.5% {
+        top: 30%;
+        left: 45%;
+        animation-timing-function: ease-out;
+    }
+    75% {
+        top: -2%;
+        left: 20%;
+        animation-timing-function: ease-in;
+    }
+    87.5% {
+        top: 30%;
+        left: 0%;
+        animation-timing-function: ease-out;
+    }
+    100% {
+        top: -2%;
+        left: 0%;
+        animation-timing-function: ease-in;
+    }
+}
+
+/* двигающиеся банки */
+
+.kassa {
+    background-color: #FFAB00;
+    height: 20vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.cans {
+    position: absolute; 
+    bottom: 0;
+    width: 180vw;
+    height: auto;
+    animation: moveCans 2s infinite alternate ease-in-out;
+    animation-play-state: running;
+}
+
+.cans:hover {
+    animation-play-state: paused;
+}
+
+@keyframes moveCans {
+    0% {
+        right: -5%;
+    }
+    100% {
+        right: -80%;
+    }
+}
+
+/* wow-cool */
+
+.wow {
+    background-color: #001EFF;
+    height: 38vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.fon2 {
+    max-width: 400%;
+    max-height: 400%; 
+    object-fit: contain;
+    transform-origin: center;
+    animation: rotateFon 20s linear infinite;
+    position: absolute;
+    z-index: 1;
+}
+
+.babl {
+    position: absolute;
+    top: 50%; 
+    left: 40%;
+    max-width: 200%;
+    height: auto;
+    z-index: 2;
+    animation: growBabl 3s ease-in-out forwards infinite;
+}
+
+@keyframes growBabl {
+    0% {
+        transform: translateY(-50%) scale(0); 
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-50%) scale(2.6); 
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-50%) scale(0); 
+        opacity: 1;
+    }
+}
+
+.wowmove {
+    position: absolute;
+    top: 70%; 
+    left: 0%; 
+    z-index: 3;
+    opacity: 0;
+    animation: growWowmove 3s ease-in-out forwards infinite;
+    animation-delay: 0.3s;
+    rotate: -20deg;
+}
+
+
+@keyframes growWowmove {
+    0% {
+        transform: translateY(-50%) scale(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-50%) scale(0.7); 
+    }
+    100% {
+        transform: translateY(-50%) scale(0);
+        opacity: 1;
+    }
+}
+
+
+
+.babl2 {
+    position: absolute;
+    top: 20%;
+    left: 70%;
+    max-width: 200%;
+    height: auto;
+    z-index: 3;
+    opacity: 0;
+    animation: growBabl2 3s ease-in-out forwards infinite;
+    animation-delay: 0.9s;
+}
+
+@keyframes growBabl2 {
+    0% {
+        transform: translateY(-50%) scale(0); 
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-50%) scale(1); 
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-50%) scale(0); 
+        opacity: 1;
+    }
+}
+
+.boo {
+    position: absolute;
+    top: 15%; 
+    left: 20%; 
+    z-index: 4;
+    opacity: 0;
+    animation: growCool 2.3s ease-in-out forwards infinite;
+    animation-delay: 1.4s;
+}
+
+@keyframes growCool {
+    0% {
+        transform: translateY(-50%) scale(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-50%) scale(0.6); 
+    }
+    100% {
+        transform: translateY(-50%) scale(0);
+        opacity: 1;
+    }
+}
+
+.ops {
+    position: absolute;
+    top: 30%; 
+    left: 1%;
+    max-width: 50%;
+    height: auto;
+    z-index: 1;
+    animation: ops 3s ease-in-out forwards infinite;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+@keyframes ops {
+    0% {
+        transform: translateY(-50%) scale(0); 
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-50%) scale(1); 
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-50%) scale(0); 
+        opacity: 1;
+    }
+}
+
+.krug, .krug2, .krug3 {
+    position: absolute;
+    height: auto;
+    animation: fadeCycle 3s infinite;
+    transform-origin: center;
+    opacity: 0;
+}
+
+.krug {
+    top: 90%; 
+    left: 93%;
+    max-width: 3%;
+    z-index: 1;
+    animation-delay: 0.5s;
+}
+
+.krug2 {
+    top: 83%; 
+    left: 90%;
+    max-width: 4%;
+    z-index: 1;
+    animation-delay: 1s;
+}
+
+.krug3 {
+    top: 52%; 
+    left: 73%;
+    max-width: 20%;
+    z-index: 1;
+    animation-delay: 1.5s;
+}
+
+@keyframes fadeCycle {
+    0% {
+        opacity: 1;
+        transform: scale(0);
+    }
+    25% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    75% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(0);
+    }
+}
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden; 
+    background-color: #FFAB00;
+    height: 4.5vw;
+    position: relative;
+    overflow: hidden
+}
+
+.marquee {
+    display: flex;
+    animation: scroll 7s linear infinite;
+    animation-play-state: running;
+}
+
+.marquee:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(-62%);
+    }
+    100% {
+        transform: translateX(-300%);
+    }
+}
+
+/* секция с бутылкой */
+
+.section {
+    width: 100%;
+    height: 140vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.tribloka {
+    display: flex;
+    width: 100%;
+}
+
+.butilka {
+    background-color: #FFCC00;
+    height: 140vh;
+    width: 27vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.luchi2 {
+    height: auto;
+    animation: moveluchi 3s ease-in-out infinite;
+    position: absolute;
+    scale: 150%;
+    z-index: 1;
+}
+
+@keyframes moveluchi {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(10%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.movebutilka, .movebutilka2, .movebutilka3, .movebutilka4, .movebutilka5 {
+    position: absolute;
+    width: 69%;
+    height: auto;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+    animation: changeImage 2.5s infinite;
+}
+
+.movebutilka {
+    animation-delay: 0s;
+}
+
+.movebutilka2 {
+    animation-delay: 0.5s;
+}
+
+.movebutilka3 {
+    animation-delay: 1s;
+}
+
+.movebutilka4 {
+    animation-delay: 1.5s;
+}
+
+.movebutilka5 {
+    animation-delay: 2s;
+}
+
+@keyframes changeImage {
+    0% {
+        z-index: 5;
+    }
+    100% {
+        z-index: 1;
+    }
+}
+
+.c {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    left: 35%;
+    top: 57%;
+    z-index: 3;
+    animation: moveC 3s ease-in-out infinite;
+}
+
+@keyframes moveC {
+    0% {
+        transform: translateX(0) translateY(0); /* Начальная позиция и размер */
+        scale: 0;
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(-40%) translateY(-480%); /* Конечная позиция для .c */
+        scale: 1;
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    99%{
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0) translateY(0); /* Конечная позиция для .c */
+        scale: 0;
+    }
+}
+
+.i {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    left: 35%;
+    top: 57%;
+    z-index: 3;
+    animation: moveI 3s ease-in-out infinite;
+}
+
+@keyframes moveI {
+    0% {
+        transform: translateX(0) translateY(0); /* Начальная позиция и размер */
+        scale: 0;
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(20%) translateY(-360%); /* Конечная позиция для .i */
+        scale: 1;
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0) translateY(0); /* Конечная позиция для .i */
+        scale: 0;
+        opacity: 1;
+    }
+}
+
+.l {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    left: 35%;
+    top: 57%;
+    z-index: 3;
+    animation: movel 3s ease-in-out infinite;
+}
+
+@keyframes movel {
+    0% {
+        transform: translateX(0) translateY(0); /* Начальная позиция и размер */
+        scale: 0;
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(-40%) translateY(-240%); /* Конечная позиция для .i */
+        scale: 1;
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0) translateY(0); /* Конечная позиция для .i */
+        scale: 0;
+        opacity: 0;
+    }
+}
+
+.a {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    left: 35%;
+    top: 57%;
+    z-index: 3;
+    animation: movea 3s ease-in-out infinite;
+}
+
+@keyframes movea {
+    0% {
+        transform: translateX(0) translateY(0); /* Начальная позиция и размер */
+        scale: 0;
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(20%) translateY(-120%); /* Конечная позиция для .i */
+        scale: 1;
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0) translateY(0); /* Конечная позиция для .i */
+        scale: 0;
+        opacity: 0;
+    }
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100%;
+}
+
+.krushki {
+    background-color: #FF0000;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.zvezda2 {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    background-color: #001EFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.krushka1 {
+    position: absolute;
+    left: 7vw;
+    top: 6vw;
+    animation: krushka1 1.5s infinite ease-in-out;
+}
+
+@keyframes krushka1 {
+    0% {
+        rotate: -20deg;
+    }
+    50% {
+        rotate: 20deg;
+    }
+    100% {
+        rotate: -20deg;
+    }
+}
+
+@keyframes krushka2 {
+    0% {
+        rotate: 20deg;
+    }
+    50% {
+        rotate: -20deg;
+    }
+    100% {
+        rotate: 20deg;
+    }
+}
+
+.boom1, .boom11 {
+    position: absolute;
+    left: 35vw;
+    top: 3vh;
+    animation: boom 2s infinite;
+    scale: 0.8;
+}
+
+.boom11 {
+    animation-delay: 1s;
+}
+
+@keyframes boom {
+    0%, 100% {
+        z-index: 2;
+    }
+    50% {
+        z-index: 1;
+    }
+}
+
+
+.boom2 {
+    position: absolute;
+    left: 46vw;
+    top: 3vh;
+    animation: boom2 2s infinite;
+    scale: 0.8;
+}
+
+@keyframes boom2 {
+    0%{
+        scale: 0;
+        rotate: 0;
+    }
+    50%{
+        scale: 0.8;
+        rotate: 20deg;
+    }
+    100%{
+        scale: 0;
+        rotate: 0;
+    }
+}
+
+.boom3 {
+    position: absolute;
+    left: 57vw;
+    top: 3vh;
+    animation: boom3 1s infinite linear;
+    scale: 0.8;
+}
+
+@keyframes boom3 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.boom4 {
+    position: absolute;
+    left: 38vw;
+    top: 23vh;
+    rotate: 40deg;
+    animation: boom4 1s infinite linear;
+    scale: 0.8;
+}
+
+@keyframes boom4 {
+    0% {
+        transform: rotate(0deg);
+        scale: 0;
+    }
+    50% {
+        scale: 0.8;
+    }
+    100% {
+        transform: rotate(-360deg);
+        scale: 0;
+    }
+}
+
+.boom55, .boom5 {
+    position: absolute;
+    left: 49vw;
+    top: 23vh;
+    rotate: 40deg;
+    animation: boom55 1.5s infinite;
+    scale: 0.8;
+}
+
+.boom55 {
+    animation-delay: 1s;
+}
+
+@keyframes boom55 {
+    0%, 100% {
+        z-index: 2;
+    }
+    50% {
+        z-index: 1;
+    }
+}
+
+.boom6 {
+    position: absolute;
+    left: 60vw;
+    top: 23vh;
+    rotate: 40deg;
+    animation: boom6 1.5s infinite;
+    scale: 0.8;
+}
+
+@keyframes boom6 {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-180deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+
+.boom7, .boom77 {
+    position: absolute;
+    left: 35vw;
+    top: 43vh;
+    rotate: 40deg;
+    animation: boom77 1.5s infinite;
+    scale: 0.8;
+}
+
+.boom77 {
+    animation-delay: 1s;
+}
+
+@keyframes boom77 {
+    0%, 100% {
+        z-index: 2;
+    }
+    50% {
+        z-index: 1;
+    }
+}
+
+
+.boom8 {
+    position: absolute;
+    left: 46vw;
+    top: 43vh;
+    animation: boom8 2s infinite;
+    animation-delay: 0.5s;
+    scale: 0.8;
+}
+
+@keyframes boom8 {
+    0%{
+        scale: 0;
+        rotate: 0;
+    }
+    50%{
+        scale: 0.8;
+        rotate: -40deg;
+    }
+    100%{
+        scale: 0;
+        rotate: 0;
+    }
+}
+
+.boom9, .boom99 {
+    position: absolute;
+    left: 57vw;
+    top: 43vh;
+    rotate: 40deg;
+    animation: boom99 1.5s infinite;
+    scale: 0.8;
+}
+
+.boom99 {
+    animation-delay: 1s;
+}
+
+@keyframes boom99 {
+    0%, 100% {
+        z-index: 2;
+    }
+    50% {
+        z-index: 1;
+    }
+}
+
+.fon3 {
+    position: absolute;
+    left: -100vw;
+    width: 350%;
+    height: 350%;
+    object-fit: contain;
+    transform-origin: center;
+    animation: rotateFon 20s linear infinite;
+}
+
+.bigzvezda {
+    position: absolute;
+    bottom: -1vw;
+    left: 50%;
+    transform: translateX(-50%);
+    transform-origin: center bottom;
+    animation: bigzvezda 3s infinite ease-in-out;
+}
+
+@keyframes bigzvezda {
+    0% {
+        transform: translateX(-50%) scale(1);
+    }
+
+    50% {
+        transform: translateX(-50%) scale(1.5);
+    }
+
+    100% {
+        transform: translateX(-50%) scale(1);
+    }
+}
+
+.podval {
+    width: 100%;
+    height: 11vh;
+    background-color: #FFCC00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0vh;
+    color: #FF0000;
+}
+
+/* подвал */
+
+.text {
+    font-size: 3vh;
+    padding: 0 2vw;
+}
+.text:hover {
+    color: #001EFF;
+}
