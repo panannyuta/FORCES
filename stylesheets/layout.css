@@ -285,8 +285,6 @@
     }
 }
 
-
-
 .babl2 {
     position: absolute;
     top: 20%;
@@ -440,8 +438,8 @@
 }
 
 .zigzag2 {
-    height: 3vh;  /* Сохраняем пропорции изображения */
-    height: auto;  /* Ограничиваем высоту изображения контейнером */
+    height: 3vh;
+    height: auto;
 }
 
 @keyframes scroll {
@@ -467,8 +465,6 @@
     flex-wrap: wrap;
     width: 100%;
 }
-
-
 
 .butilka {
     background-color: #FFCC00;
@@ -557,15 +553,15 @@
 
 @keyframes moveC {
     0% {
-        transform: translateX(0) translateY(0); /* Начальная позиция и размер */
+        transform: translateX(0) translateY(0);
         scale: 0;
     }
     50% {
-        transform: translateX(-40%) translateY(-420%); /* Конечная позиция для .c */
+        transform: translateX(-40%) translateY(-420%);
         scale: 0.6;
     }
     100% {
-        transform: translateX(0) translateY(0); /* Конечная позиция для .c */
+        transform: translateX(0) translateY(0);
         scale: 0;
     }
 }
@@ -582,15 +578,15 @@
 
 @keyframes moveI {
     0% {
-        transform: translateX(0) translateY(0); /* Начальная позиция и размер */
+        transform: translateX(0) translateY(0);
         scale: 0;
     }
     50% {
-        transform: translateX(20%) translateY(-320%); /* Конечная позиция для .i */
+        transform: translateX(20%) translateY(-320%);
         scale: 0.6;
     }
     100% {
-        transform: translateX(0) translateY(0); /* Конечная позиция для .i */
+        transform: translateX(0) translateY(0);
         scale: 0;
     }
 }
@@ -607,15 +603,15 @@
 
 @keyframes movel {
     0% {
-        transform: translateX(0) translateY(0); /* Начальная позиция и размер */
+        transform: translateX(0) translateY(0);
         scale: 0;
     }
     50% {
-        transform: translateX(-40%) translateY(-220%); /* Конечная позиция для .i */
+        transform: translateX(-40%) translateY(-220%);
         scale: 0.6;
     }
     100% {
-        transform: translateX(0) translateY(0); /* Конечная позиция для .i */
+        transform: translateX(0) translateY(0);
         scale: 0;
     }
 }
@@ -632,17 +628,16 @@
 
 @keyframes movea {
     0% {
-        transform: translateX(0) translateY(0); /* Начальная позиция и размер */
+        transform: translateX(0) translateY(0);
         scale: 0;
     }
     50% {
-        transform: translateX(20%) translateY(-120%); /* Конечная позиция для .i */
+        transform: translateX(20%) translateY(-120%);
         scale: 0.6;
     }
     100% {
-        transform: translateX(0) translateY(0); /* Конечная позиция для .i */
+        transform: translateX(0) translateY(0);
         scale: 0;
-
     }
 }
 
@@ -794,7 +789,6 @@
         z-index: 1;
     }
 }
-
 
 .fon3 {
     max-width: 400%;

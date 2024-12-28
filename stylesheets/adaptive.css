@@ -8,37 +8,38 @@ html, body {
 
   /* Медиазапросы для мобильных устройств с шириной до 430px */
   @media (max-width: 430px) {
-
     .head {
-        height: 11vw;
-        background-color: #FF0000;
-        position: relative;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      height: 11vw;
+      background-color: #FF0000;
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+
     }
 
     .zigzag {
-        height: 5vh;
-        width: auto;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+      height: 5vh;
+      width: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
 
     @keyframes moveLeftRight {
-        0% {
-          transform: translateX(10vw);
-        }
-        50% {
-          transform: translateX(-10vw);
-        }
-        100% {
-          transform: translateX(10vw);
-        }
+      0% {
+        transform: translateX(10vw);
       }
+      50% {
+        transform: translateX(-10vw);
+      }
+      100% {
+        transform: translateX(10vw);
+      }
+    }
 
     /* Секция с "двумя блоками" */
     .dvabloka {
@@ -47,9 +48,9 @@ html, body {
     }
 
     .luchi {
-        max-width: 200%;
-        height: auto;
-        animation: moveTopBottom 3s ease-in-out infinite;
+      max-width: 200%;
+      height: auto;
+      animation: moveTopBottom 3s ease-in-out infinite;
     }
 
     .zvezdamove, .banka {
@@ -58,13 +59,13 @@ html, body {
     }
 
     .zvezdaimg {
-        position: absolute;
-        top: 8vw;
+      position: absolute;
+      top: 8vw;
     }
 
     .bankaimg {
-        width: 60vw;
-        height: 60vw;
+      width: 60vw;
+      height: 60vw;
     }
 
     .bankamove {
@@ -126,26 +127,23 @@ html, body {
     }
 
     @keyframes bigzvezda {
-        0% {
-            transform: translateX(-50%) scale(0.5);
-        }
-    
-        50% {
-            transform: translateX(-50%) scale(1);
-        }
-    
-        100% {
-            transform: translateX(-50%) scale(0.5);
-        }
+      0% {
+        transform: translateX(-50%) scale(0.5);
+    }
+    50% {
+        transform: translateX(-50%) scale(1);
+    }
+    100% {
+        transform: translateX(-50%) scale(0.5);
+    }
     }
   
     .krug, .krug2, .krug3 {
       display: none;
     }
 
-    /* Мобильные стили для бегущего зигзага */
     .marquee-container {
-        height: 11vw;
+      height: 11vw;
     }
 
     .zigzag2 {
@@ -154,45 +152,43 @@ html, body {
 
     /* три блока */
 
-    /* крыщка */
-
     .butilka {
-        display: none;
+      display: none;
     }
 
     .section {
-        width: 100%;
-        height: 80vh;
-        display: flex;
-        flex-direction: column;
+      width: 100%;
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
     }
     
     .krushki {
-        width: 100vw;  /* Уменьшаем ширину для krushki */
-        height: 40vh; /* Уменьшаем высоту для krushki */
+      width: 100vw;
+      height: 40vh;
     }
 
     .krushka1, .krushka2 {
-        width: 40vw;
-        height: auto;
+      width: 40vw;
+      height: auto;
     }
 
     .boom1, .boom11, .boom2, .boom3, .boom5, .boom55 {
-        width: 20vw;
-        height: auto;
+      width: 20vw;
+      height: auto;
     }
 
     /* большая звезда */
 
     .bigzvezda {
-        height: 42vh;
-        width: auto;
+      height: 42vh;
+      width: auto;
     }
 
     /* Подвал */
 
     .podval {
-        height: 11vw;
+      height: 11vw;
     }
     
     .text {
@@ -202,34 +198,34 @@ html, body {
 
 @media screen and (min-width: 431px) and (max-width: 768px) {
     .head {
-        height: 9vw;
-        background-color: #FF0000;
-        position: relative;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+      height: 9vw;
+      background-color: #FF0000;
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
 
     .zigzag {
-        height: 8vh;
-        width: auto;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+      height: 8vh;
+      width: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
 
     @keyframes moveLeftRight {
-        0% {
-          transform: translateX(10vw);
-        }
-        50% {
-          transform: translateX(-10vw);
-        }
-        100% {
-          transform: translateX(10vw);
-        }
+      0% {
+        transform: translateX(10vw);
+      }
+      50% {
+        transform: translateX(-10vw);
+      }
+      100% {
+        transform: translateX(10vw);
+      }
       }
 
     /* Секция с "двумя блоками" */
@@ -239,9 +235,9 @@ html, body {
     }
 
     .luchi {
-        max-width: 200%;
-        height: auto;
-        animation: moveTopBottom 3s ease-in-out infinite;
+      max-width: 200%;
+      height: auto;
+      animation: moveTopBottom 3s ease-in-out infinite;
     }
 
     .zvezdamove, .banka {
@@ -250,13 +246,13 @@ html, body {
     }
 
     .zvezdaimg {
-        position: absolute;
-        top: 8vw;
+      position: absolute;
+      top: 8vw;
     }
 
     .bankaimg {
-        width: 60vw;
-        height: 60vw;
+      width: 60vw;
+      height: 60vw;
     }
 
     .bankamove {
@@ -321,72 +317,67 @@ html, body {
       display: none;
     }
 
-    /* Мобильные стили для бегущего зигзага */
     .marquee-container {
-        height: 11vw;
+      height: 11vw;
     }
 
     .zigzag2 {
-        height: 11vw;
+      height: 11vw;
     }
 
     /* три блока */
 
-    /* крыщка */
-
     .butilka {
-        display: none;
+      display: none;
     }
 
     .section {
-        width: 100%;
-        height: 130vh;
-        display: flex;
-        flex-direction: column;
+      width: 100%;
+      height: 130vh;
+      display: flex;
+      flex-direction: column;
     }
 
     @keyframes bigzvezda {
-        0% {
-            transform: translateX(-50%) scale(1);
-        }
-    
-        50% {
-            transform: translateX(-50%) scale(1.7);
-        }
-    
-        100% {
-            transform: translateX(-50%) scale(1);
-        }
+      0% {
+        transform: translateX(-50%) scale(1);
     }
 
+    50% {
+        transform: translateX(-50%) scale(1.7);
+    }
 
-    
+    100% {
+        transform: translateX(-50%) scale(1);
+    }
+    }
+
     .krushki {
-        width: auto;  /* Уменьшаем ширину для krushki */
-        height: 65vh; /* Уменьшаем высоту для krushki */
+      width: auto;  
+      height: 65vh;
     }
 
     .krushka1, .krushka2 {
-        width: 40vw;
-        height: auto;
+      width: 40vw;
+      height: auto;
     }
 
     .boom1, .boom11, .boom2, .boom3, .boom5, .boom55 {
-        width: 20vw;
-        height: auto;
+      width: 20vw;
+      height: auto;
     }
 
     /* большая звезда */
 
     .bigzvezda {
-        height: 42vh;
-        width: auto;
+      height: 42vh;
+      width: auto;
     }
 
     /* Подвал */
 
     .podval {
-        height: 11vw;
+      height: 11vw;
     }
     
     .text {
@@ -396,94 +387,94 @@ html, body {
 
 @media screen and (min-width: 769px) and (max-width: 1366px) {
     .zigzag {
-        height: 7vh;
-        width: auto;
+      height: 7vh;
+      width: auto;
     }
 
     .babl {
-        height: 15vw;
-        width: auto;
+      height: 15vw;
+      width: auto;
     }
 
     .wowmove {
-        height: 12vw;
-        width: auto;
+      height: 12vw;
+      width: auto;
     }
 
     .ops {
-        height: 18vw;
-        width: auto;
+      height: 18vw;
+      width: auto;
     }
 
     .boo {
-        height: 15vw;
-        width: auto;
+      height: 15vw;
+      width: auto;
     }
 
     .babl2 {
-        height: 15vw;
-        width: auto;
+      height: 15vw;
+      width: auto;
     }
 
     .section {
-        width: 100%;
-        height: 140vh;
+      width: 100%;
+      height: 140vh;
     }
 
     .butilka {
-        height: 60vh;
-        width: 30vw;
+      height: 60vh;
+      width: 30vw;
     }
 
     .zvezda2 {
-        height: 80vh;
-        width: auto;
+      height: 80vh;
+      width: auto;
     }
 
     .krushki {
-        background-color: #FF0000;
-        height: 100%;
-        width: 100%;
+      background-color: #FF0000;
+      height: 100%;
+      width: 100%;
     }
 
     .movebutilka, .movebutilka2, .movebutilka3, .movebutilka4, .movebutilka5 {
-        display: none;
+      display: none;
     }
 
     .c, .i, .l, .a {
-        left: 35%;
-        top: 90%;
+      left: 35%;
+      top: 90%;
     }
 
     .krushka1, .krushka2 {
-        position: absolute;
-        top: 3%;
-        width: 30vw;
-        height: auto;
+      position: absolute;
+      top: 3%;
+      width: 30vw;
+      height: auto;
     }
 
     .boom1, .boom11, .boom2, .boom3, .boom5, .boom55 {
-        width: 13vw;
-        height: auto;
+      width: 13vw;
+      height: auto;
     }
 
 }
 
-    @media screen and (min-width: 1440px) and (max-width: 1920px) {
-        .movebutilka, .movebutilka2, .movebutilka3, .movebutilka4, .movebutilka5 {
-            width: 14vw;
-            height: auto;
-            bottom: -10vh;
-        }
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .movebutilka, .movebutilka2, .movebutilka3, .movebutilka4, .movebutilka5 {
+      width: 14vw;
+      height: auto;
+      bottom: -10vh;
+    }
 
-        .zigzag2 {
-            height: 5vw;
-        }
-    
-        .c, .i, .l, .a {
-            left: 40%;
-            top: 55%;
-        }
+    .zigzag2 {
+      height: 5vw;
+    }
+
+    .c, .i, .l, .a {
+      left: 40%;
+      top: 55%;
+    }
     
 }
 
