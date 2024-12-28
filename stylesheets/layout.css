@@ -1,5 +1,8 @@
-html, body {
-  font-family: "Groboldov";
+.body {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    font-family: "Groboldov";
 }
 
 /* верхняя строка "сильнее с каждым глотком" */
@@ -413,18 +416,22 @@ html, body {
     }
 }
 
+
 .marquee-container {
     width: 100%;
     overflow: hidden; 
     background-color: #FFAB00;
-    height: 4.5vw;
+    height: 5vw;
+    display: flex;
+    align-items: center;
     position: relative;
-    overflow: hidden
+    vertical-align: middle;
+    overflow: hidden;
 }
 
 .marquee {
     display: flex;
-    animation: scroll 7s linear infinite;
+    animation: scroll 8s linear infinite;
     animation-play-state: running;
 }
 
@@ -432,12 +439,17 @@ html, body {
     animation-play-state: paused;
 }
 
+.zigzag2 {
+    height: 3vh;  /* Сохраняем пропорции изображения */
+    height: auto;  /* Ограничиваем высоту изображения контейнером */
+}
+
 @keyframes scroll {
     0% {
-        transform: translateX(-62%);
+        transform: translateX(0%);
     }
     100% {
-        transform: translateX(-300%);
+        transform: translateX(-70%);
     }
 }
 
@@ -460,8 +472,8 @@ html, body {
 
 .butilka {
     background-color: #FFCC00;
-    height: 140vh;
-    width: 27vw;
+    height: 80vh;
+    width: 30vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -500,6 +512,7 @@ html, body {
     left: 50%;
     transform: translateX(-50%);
     opacity: 1;
+    bottom: -10vh;
     animation: changeImage 2.5s infinite;
 }
 
@@ -534,7 +547,7 @@ html, body {
 
 .c {
     position: absolute;
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     left: 35%;
     top: 57%;
@@ -546,21 +559,10 @@ html, body {
     0% {
         transform: translateX(0) translateY(0); /* Начальная позиция и размер */
         scale: 0;
-        opacity: 0;
-    }
-    10% {
-        opacity: 1;
     }
     50% {
-        transform: translateX(-40%) translateY(-480%); /* Конечная позиция для .c */
-        scale: 1;
-        opacity: 1;
-    }
-    70% {
-        opacity: 1;
-    }
-    99%{
-        opacity: 0;
+        transform: translateX(-40%) translateY(-420%); /* Конечная позиция для .c */
+        scale: 0.6;
     }
     100% {
         transform: translateX(0) translateY(0); /* Конечная позиция для .c */
@@ -570,7 +572,7 @@ html, body {
 
 .i {
     position: absolute;
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     left: 35%;
     top: 57%;
@@ -582,32 +584,20 @@ html, body {
     0% {
         transform: translateX(0) translateY(0); /* Начальная позиция и размер */
         scale: 0;
-        opacity: 0;
-    }
-    10% {
-        opacity: 1;
     }
     50% {
-        transform: translateX(20%) translateY(-360%); /* Конечная позиция для .i */
-        scale: 1;
-        opacity: 1;
-    }
-    70% {
-        opacity: 1;
-    }
-    99% {
-        opacity: 0;
+        transform: translateX(20%) translateY(-320%); /* Конечная позиция для .i */
+        scale: 0.6;
     }
     100% {
         transform: translateX(0) translateY(0); /* Конечная позиция для .i */
         scale: 0;
-        opacity: 1;
     }
 }
 
 .l {
     position: absolute;
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     left: 35%;
     top: 57%;
@@ -619,32 +609,20 @@ html, body {
     0% {
         transform: translateX(0) translateY(0); /* Начальная позиция и размер */
         scale: 0;
-        opacity: 0;
-    }
-    10% {
-        opacity: 1;
     }
     50% {
-        transform: translateX(-40%) translateY(-240%); /* Конечная позиция для .i */
-        scale: 1;
-        opacity: 1;
-    }
-    70% {
-        opacity: 1;
-    }
-    99% {
-        opacity: 0;
+        transform: translateX(-40%) translateY(-220%); /* Конечная позиция для .i */
+        scale: 0.6;
     }
     100% {
         transform: translateX(0) translateY(0); /* Конечная позиция для .i */
         scale: 0;
-        opacity: 0;
     }
 }
 
 .a {
     position: absolute;
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     left: 35%;
     top: 57%;
@@ -656,26 +634,15 @@ html, body {
     0% {
         transform: translateX(0) translateY(0); /* Начальная позиция и размер */
         scale: 0;
-        opacity: 0;
-    }
-    10% {
-        opacity: 1;
     }
     50% {
         transform: translateX(20%) translateY(-120%); /* Конечная позиция для .i */
-        scale: 1;
-        opacity: 1;
-    }
-    70% {
-        opacity: 1;
-    }
-    99% {
-        opacity: 0;
+        scale: 0.6;
     }
     100% {
         transform: translateX(0) translateY(0); /* Конечная позиция для .i */
         scale: 0;
-        opacity: 0;
+
     }
 }
 
@@ -688,7 +655,7 @@ html, body {
 
 .krushki {
     background-color: #FF0000;
-    height: 50%;
+    height: 100%;
     width: 100%;
     display: flex;
     position: relative;
@@ -708,20 +675,27 @@ html, body {
 
 .krushka1 {
     position: absolute;
-    left: 7vw;
-    top: 6vw;
+    left: 5%;
+    top: 10%;
+    animation: krushka1 1.5s infinite ease-in-out;
+}
+
+.krushka2 {
+    position: absolute;
+    left: 55%;
+    top: 10%;
     animation: krushka1 1.5s infinite ease-in-out;
 }
 
 @keyframes krushka1 {
     0% {
-        rotate: -20deg;
+        transform: rotate(0deg);
     }
     50% {
-        rotate: 20deg;
+        transform: rotate(20deg);
     }
     100% {
-        rotate: -20deg;
+        transform: rotate(0deg);
     }
 }
 
@@ -739,10 +713,10 @@ html, body {
 
 .boom1, .boom11 {
     position: absolute;
-    left: 35vw;
-    top: 3vh;
+    left: 5%;
+    top: 65%;
     animation: boom 2s infinite;
-    scale: 0.8;
+    scale: 1;
 }
 
 .boom11 {
@@ -761,10 +735,10 @@ html, body {
 
 .boom2 {
     position: absolute;
-    left: 46vw;
-    top: 3vh;
+    left: 28%;
+    top: 65%;
     animation: boom2 2s infinite;
-    scale: 0.8;
+    scale: 1;
 }
 
 @keyframes boom2 {
@@ -773,7 +747,7 @@ html, body {
         rotate: 0;
     }
     50%{
-        scale: 0.8;
+        scale: 1;
         rotate: 20deg;
     }
     100%{
@@ -784,10 +758,10 @@ html, body {
 
 .boom3 {
     position: absolute;
-    left: 57vw;
-    top: 3vh;
+    left: 52%;
+    top: 65%;
     animation: boom3 1s infinite linear;
-    scale: 0.8;
+    scale: 1;
 }
 
 @keyframes boom3 {
@@ -799,36 +773,13 @@ html, body {
     }
 }
 
-.boom4 {
-    position: absolute;
-    left: 38vw;
-    top: 23vh;
-    rotate: 40deg;
-    animation: boom4 1s infinite linear;
-    scale: 0.8;
-}
-
-@keyframes boom4 {
-    0% {
-        transform: rotate(0deg);
-        scale: 0;
-    }
-    50% {
-        scale: 0.8;
-    }
-    100% {
-        transform: rotate(-360deg);
-        scale: 0;
-    }
-}
 
 .boom55, .boom5 {
+
     position: absolute;
-    left: 49vw;
-    top: 23vh;
-    rotate: 40deg;
+    left: 75%;
+    top: 65%;
     animation: boom55 1.5s infinite;
-    scale: 0.8;
 }
 
 .boom55 {
@@ -844,105 +795,14 @@ html, body {
     }
 }
 
-.boom6 {
-    position: absolute;
-    left: 60vw;
-    top: 23vh;
-    rotate: 40deg;
-    animation: boom6 1.5s infinite;
-    scale: 0.8;
-}
-
-@keyframes boom6 {
-    0% {
-        transform: rotate(0deg);
-    }
-    50% {
-        transform: rotate(-180deg);
-    }
-    100% {
-        transform: rotate(180deg);
-    }
-}
-
-
-.boom7, .boom77 {
-    position: absolute;
-    left: 35vw;
-    top: 43vh;
-    rotate: 40deg;
-    animation: boom77 1.5s infinite;
-    scale: 0.8;
-}
-
-.boom77 {
-    animation-delay: 1s;
-}
-
-@keyframes boom77 {
-    0%, 100% {
-        z-index: 2;
-    }
-    50% {
-        z-index: 1;
-    }
-}
-
-
-.boom8 {
-    position: absolute;
-    left: 46vw;
-    top: 43vh;
-    animation: boom8 2s infinite;
-    animation-delay: 0.5s;
-    scale: 0.8;
-}
-
-@keyframes boom8 {
-    0%{
-        scale: 0;
-        rotate: 0;
-    }
-    50%{
-        scale: 0.8;
-        rotate: -40deg;
-    }
-    100%{
-        scale: 0;
-        rotate: 0;
-    }
-}
-
-.boom9, .boom99 {
-    position: absolute;
-    left: 57vw;
-    top: 43vh;
-    rotate: 40deg;
-    animation: boom99 1.5s infinite;
-    scale: 0.8;
-}
-
-.boom99 {
-    animation-delay: 1s;
-}
-
-@keyframes boom99 {
-    0%, 100% {
-        z-index: 2;
-    }
-    50% {
-        z-index: 1;
-    }
-}
 
 .fon3 {
-    position: absolute;
-    left: -100vw;
-    width: 350%;
-    height: 350%;
+    max-width: 400%;
+    max-height: auto; 
     object-fit: contain;
     transform-origin: center;
     animation: rotateFon 20s linear infinite;
+    position: absolute;
 }
 
 .bigzvezda {
